@@ -1,0 +1,33 @@
+
+
+
+
+
+
+<div class="container my-5">
+    <h3>Details</h3>
+    <hr>
+
+    <div class="row">
+        <div class="col-sm-12">
+            
+            
+                <h1> {{employee.firstName}} {{employee.lastName}} </h1>
+                <p> {{employee.emailId}} </p>
+            
+                <h3>payments</h3>
+
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let p of payments">
+                            <td> {{ p.id }} </td>
+                            <td> {{ p.amount }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+        </div>
+    </div>
+</div>
